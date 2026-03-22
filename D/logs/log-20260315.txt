@@ -1,0 +1,5 @@
+03/15/2026 16:11:11 +02:00Now listening on: "https://localhost:7054"
+03/15/2026 16:11:11 +02:00Now listening on: "http://localhost:5177"
+03/15/2026 16:11:11 +02:00Application started. Press Ctrl+C to shut down.
+03/15/2026 16:11:11 +02:00Hosting environment: "Development"
+03/15/2026 16:11:11 +02:00Content root path: "C:\Users\Administrator\source\repos\SurveyBasketApi\SurveyBasket"

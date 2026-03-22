@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html dir="ltr">
+<head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #1e1e1e; /* لون غامق زي الصورة */
+            color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .logo {
+            text-align: center;
+            font-size: 18px;
+            color: #999;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #d1d1d1;
+        }
+
+        .highlight {
+            color: #4ade80; /* اللون الأخضر المميز */
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #10b981; /* نفس درجة الأخضر في الصورة */
+            color: white !important;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 30px 0;
+        }
+
+        .footer {
+            margin-top: 40px;
+            border-top: 1px solid #444;
+            padding-top: 20px;
+            font-size: 12px;
+            color: #888;
+        }
+
+        .address {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Survey Basket</div>
+
+        <h2>Hi <span class="highlight">{{name}}</span>,</h2>
+
+        <p>A new poll has been published that might interest you!</p>
+
+        <p>Title: <span class="highlight">{{pollTitle}}</span></p>
+
+        <p>This poll will be available until: <strong>{{endDate}}</strong>. Make sure to share your opinion before it's too late.</p>
+
+        <a href="{{poll_url}}" class="btn">View Poll Details</a>
+
+        <p>Thanks,<br>Survey Basket team</p>
+
+        <div class="footer">
+            If you're having trouble with the button above, copy and paste the URL below into your web browser:
+            <br>
+            <span style="color: #10b981;">{{poll_url}}</span>
+        </div>
+
+        <div class="address">
+            Survey Basket<br>
+            1234 Street Rd.<br>
+            Cairo, Egypt
+        </div>
+    </div>
+</body>
+</html>

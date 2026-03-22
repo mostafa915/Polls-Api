@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Basic reset for email clients */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+
+        .content {
+            padding: 40px;
+            color: #333333;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            color: #666666;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #28a745;
+            color: #ffffff !important;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: left;
+            font-size: 12px;
+            color: #777777;
+            border-top: 1px solid #eeeeee;
+        }
+
+        .url-box {
+            word-break: break-all;
+            color: #888888;
+            font-size: 11px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <table role="presentation" class="container" cellspacing="0" cellpadding="0" border="0" align="center">
+        <tr>
+            <td class="header">
+                Survey Basket
+            </td>
+        </tr>
+
+        <tr>
+            <td class="content">
+                <h2 style="margin-top: 0;">Hi {{name}},</h2>
+                <p style="font-size: 16px; line-height: 1.5;">To confirm your email, please click the button below:</p>
+
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0">
+                    <tr>
+                        <td align="center">
+                            <a href="{{action_url}}" class="button">Verify email address</a>
+                        </td>
+                    </tr>
+                </table>
+
+                <p style="margin-top: 30px;">Thanks,<br><strong>Survey Basket team</strong></p>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="footer">
+                <p>If you're having trouble with the button above, copy and paste the URL below into your web browser:</p>
+                <div class="url-box">
+                    <a href="{{action_url}}" style="color: #007bff;">{{action_url}}</a>
+                </div>
+
+                <div style="margin-top: 30px; text-align: center; color: #aaaaaa;">
+                    Survey Basket<br>
+                    1234 Street Rd.<br>
+                    Cairo, Egypt
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
